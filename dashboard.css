@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Sansita Swashed', cursive;
 }
 /*header*/
 .header{
@@ -154,14 +155,19 @@ input{
     background-size: cover;
     width: 25%;
     height: 100%;
+    font-size: 100px;
     border-right: 2px solid #0080ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .postes_infos{
     width: 75%;
     height: auto;
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
