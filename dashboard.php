@@ -1,13 +1,3 @@
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,7 +6,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberRoom_Admin</title>
     <link rel="stylesheet" href="dashboard.css">
-    <script src="javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">     <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -31,7 +23,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <div class="header_time">
             <h2 class="in_time">
                 <p id="date"></p>
-                <p></p>
             </h2>
         </div>
     </div>
@@ -68,7 +59,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <form method="post">
                 <input type="text" placeholder= "𝑬𝒏𝒕𝒓𝒆𝒛 𝒖𝒏 𝒏𝒐𝒎" name="utilisateur_nom">
                 <input type="text" placeholder= "𝑬𝒏𝒕𝒓𝒆𝒛 𝒖𝒏 𝒑𝒓𝒆́𝒏𝒐𝒎" name="utilisateur_prenom">
-                <input type="text" placeholder= "Choisissez un poste" name="poste">
+                <input type="text" placeholder= "𝑺𝒆́𝒍𝒆𝒄𝒕𝒊𝒐𝒏𝒏𝒆𝒛 𝒖𝒏 𝒑𝒐𝒔𝒕𝒆" name="poste">
                 <input type="submit" class="account_button" value="Valider">
             </form>
         </div>
@@ -115,7 +106,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <div class="postes">
         <div class="postes_1">
-            <div class="postes_img"></div>
+            <div class="postes_img">1</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -163,7 +154,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_2">
-            <div class="postes_img"></div>
+            <div class="postes_img">2</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -211,7 +202,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_3">
-            <div class="postes_img"></div>
+            <div class="postes_img">3</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -259,7 +250,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_4">
-            <div class="postes_img"></div>
+            <div class="postes_img">4</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -307,7 +298,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_5">
-            <div class="postes_img"></div>
+            <div class="postes_img">5</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -355,7 +346,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_6">
-            <div class="postes_img"></div>
+            <div class="postes_img">6</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -403,7 +394,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_7">
-            <div class="postes_img"></div>
+            <div class="postes_img">7</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
@@ -451,7 +442,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="postes_8">
-            <div class="postes_img"></div>
+            <div class="postes_img">8</div>
             <div class="postes_infos">
                 <ul class="poste_liste">
                     <li class="poste_titre">
