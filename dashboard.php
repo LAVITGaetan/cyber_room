@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,8 +8,8 @@
     <title>CyberRoom_Admin</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">     <script src="javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap" rel="stylesheet">     
+    <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </div>
         <div class="header_time">
             <h2 class="in_time">
-                <p id="date"></p>
+                <p id="compteur"></p>
             </h2>
         </div>
     </div>
@@ -59,7 +60,17 @@
             <form method="post">
                 <input type="text" placeholder= "𝑬𝒏𝒕𝒓𝒆𝒛 𝒖𝒏 𝒏𝒐𝒎" name="utilisateur_nom">
                 <input type="text" placeholder= "𝑬𝒏𝒕𝒓𝒆𝒛 𝒖𝒏 𝒑𝒓𝒆́𝒏𝒐𝒎" name="utilisateur_prenom">
-                <input type="text" placeholder= "𝑺𝒆́𝒍𝒆𝒄𝒕𝒊𝒐𝒏𝒏𝒆𝒛 𝒖𝒏 𝒑𝒐𝒔𝒕𝒆" name="poste">
+                <select class="select" name="poste">
+                    <option value="1">Poste 1</option>
+                    <option value="2">Poste 2</option>
+                    <option value="3">Poste 3</option>
+                    <option value="4">Poste 4</option>
+                    <option value="5">Poste 5</option>
+                    <option value="6">Poste 6</option>
+                    <option value="7">Poste 7</option>
+                    <option value="8">Poste 8</option>
+                </select>
+
                 <input type="submit" class="account_button" value="Valider">
             </form>
         </div>
