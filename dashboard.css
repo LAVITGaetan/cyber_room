@@ -89,7 +89,6 @@ form{
 
 input{
     margin-top: 50px;
-    padding: 12px 8px;
     padding: 8px 5px;
     color: #192d3b;
     font-size: 20px;
@@ -131,6 +130,19 @@ input{
     color: #192d3b;
     text-align: center;
 }
+
+select{
+    width: 15%;
+    margin-top: 50px;
+    padding: 8px 5px;
+    color: #192d3b;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 2px solid #192d3b;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #192d3b;
+}
+
 
 /* Partie information sur les postes*/
 
