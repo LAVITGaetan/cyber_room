@@ -17,7 +17,7 @@ body{
     width: 100%;
     height: 125px;
     display: flex;
-    background-color: #000000;
+    background-color: #192d3b;
 }
 
 .header_cadre{
@@ -25,14 +25,14 @@ body{
     width: 80%;
     height: 125px; 
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
 .header_time{
     border-left: 2px solid #ffffff;
     width: 20%;
     height: 125px;
-    background-color:#192d3b;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,25 +40,25 @@ body{
 
 .in_time{
     font-size: 65px;
-    color: #0080ff;
+    color: #192d3b;
 }
 
 .title{
-    font-size: 65px;
+    font-size: 75px;
     margin-left: 400px;
-    margin-top: 4.5%;
-    color: #0080ff;
-    
+    margin-top: 2.5%;
+    color: #ffffff;
+
 
 }
 .cadre_logo{
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     border-bottom: transparent;
     border-top: transparent;
     width: 125px;
     height: 100%;
     border-radius: 30px;
-    background-image: url(images/logo.png);
+    background-image: url(https://zupimages.net/up/20/45/hbr2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@ body{
 .account{
     width: 100%;
     height: auto;
-    background-color: #ffffffde;
+    background-color:  #ffffff;
 }
 
 .account_titre{
@@ -87,7 +87,7 @@ form{
     flex-direction: column;
 }
 
-input{
+.account_input{
     margin-top: 50px;
     padding: 8px 5px;
     color: #192d3b;
@@ -96,6 +96,17 @@ input{
     border: 2px solid #192d3b;
     border-radius: 8px;
     box-shadow: 2px 2px 7px #192d3b;
+}
+
+.reservations_input{
+    margin-top: 50px;
+    padding: 8px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #192d3b;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ffffff;
 }
 
 .account_button{
@@ -117,23 +128,127 @@ input{
 
 /*Partie assignation de poste*/
 
+.formulaires{
+    display: flex;
+    margin-top: 100px;
+}
+
 .reservations{
     width: 100%;
     height: auto;
-    margin-top: 50px;
-    background-color: #ffffffde;
+    background-color: #192d3b;
 }
 
 .reservations_titre{
     padding-top: 50px;
     font-size: 25px;
-    color: #192d3b;
+    color: #ffffff;
     text-align: center;
 }
 
 select{
     width: 15%;
     margin-top: 50px;
+    padding: 8px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #192d3b;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ffffff;
+}
+
+.reservations_button{
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 8px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #192d3b;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ffffff;
+}
+
+/* Partie information sur les postes*/
+
+.postes{
+    width: 90%;
+    height: auto;
+    margin: 50px auto 50px auto;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.poste_1, .poste_3, .poste_6, .poste_8{
+    width: 25%;
+    height: auto;
+    background-color: #192d3b;
+}
+
+.poste_2, .poste_4, .poste_5, .poste_7{
+    width: 25%;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.poste_img__blue{
+    border-bottom: 3px solid white;
+}
+
+.poste_img__white{
+    border-bottom: 3px solid #192d3b;
+}
+
+.poste_infos__blue{
+    width: 100%;
+    height: auto;
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.poste_infos__white{
+    width: 100%;
+    height: auto;
+    padding-top: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #192d3b;
+    font-size: 25px;
+    text-align: center;
+}
+
+.poste_liste{
+    list-style-type: none;
+}
+
+.poste_timer{
+    width: 100%;
+    height: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer_input__white{
+    width: 75%;
+    margin-top: 18px;
     padding: 8px 5px;
     color: #192d3b;
     font-size: 20px;
@@ -143,51 +258,42 @@ select{
     box-shadow: 2px 2px 7px #192d3b;
 }
 
-
-/* Partie information sur les postes*/
-
-.postes{
-    width: 90%;
-    height: auto;
-    margin: 50px auto 0 auto;
-    background-color: #000000;
-    border: 2px solid #ffffff;
+.poste_button__white{
+    margin-top: 18px;
+    padding: 8px 5px;
+    color: #192d3b;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 2px solid #192d3b;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #192d3b;
 }
 
-.postes_1, .postes_2, .postes_3, .postes_4, .postes_5, .postes_6, .postes_7, .postes_8{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    border-bottom: 2px solid #0080ff;
-}
-
-.postes_img{
-    background-image: url(images/image_poste.png);
-    background-position: center;
-    background-size: cover;
-    width: 25%;
-    height: 100%;
-    font-size: 100px;
-    border-right: 2px solid #0080ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.postes_infos{
+.timer_input__blue{
     width: 75%;
-    height: auto;
-    padding-left: 50px;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
+    margin-top: 18px;
+    padding: 8px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #192d3b;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ffffff;
 }
 
-.poste_liste{
-    list-style-type: none;
+.poste_button__blue{
+    margin-top: 18px;
+    padding: 8px 5px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #192d3b;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px #ffffff;
+}
+
+.poste_button__white:hover, .poste_button__blue:hover{
+    cursor: pointer;
 }
 
 /* Partie Footer*/
@@ -221,20 +327,13 @@ li{
     {
         width: auto;
         text-align: left;
-
-
     }
     .title{
         font-size: 65px;
         margin-left: 100px;
-
-
-
-
     }
     .in_time{
         font-size: 40px;
-        color: #0080ff;
     }
 
 }
