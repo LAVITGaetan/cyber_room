@@ -185,7 +185,7 @@
     <div class="postes">
         <div class="poste_1">
             <div class="poste_img__blue">
-                <img src="images/poste_1.png" width="100%" height="100%">
+                <img id="poste-1_img" src="images/poste_1.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__blue">
                 <ul class="poste_liste">
@@ -199,7 +199,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-1_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -220,7 +220,9 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo">
+
                     </li>
                 </ul>
             </div>
@@ -236,7 +238,7 @@
         </div>
         <div class="poste_2">
             <div class="poste_img__white">
-                <img src="images/poste_2_white.png" width="100%" height="100%">
+                <img id="poste-2_img" src="images/poste_2_white.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__white">
                 <ul class="poste_liste">
@@ -250,7 +252,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-2_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -271,6 +273,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_2">
                 </ul>
             </div>
@@ -286,7 +289,7 @@
         </div>
         <div class="poste_3">
             <div class="poste_img__blue">
-                <img src="images/poste_3.png" width="100%" height="100%">
+                <img id="poste-3_img" src="images/poste_3.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__blue">
                 <ul class="poste_liste">
@@ -300,7 +303,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-3_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -321,6 +324,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_3">
                 </ul>
             </div>
@@ -337,7 +341,7 @@
 
         <div class="poste_4">
             <div class="poste_img__white">
-                <img src="images/poste_4_white.png" width="100%" height="100%">
+                <img id="poste-4_img" src="images/poste_4_white.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__white">
                 <ul class="poste_liste">
@@ -351,7 +355,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-4_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -372,13 +376,14 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_4">
                 </ul>
             </div>
             <div class="poste_timer">
                 <form method="POST" action="#">
-                     Date<input type="date" class="timer_input__white" name="date_4" value="<?php echo $date_4; ?>">
-                     Heures <input type="number" class="timer_input__white" name="h_4" value="<?php echo $h_4; ?>">
+                    Date<input type="date" class="timer_input__white" name="date_4" value="<?php echo $date_4; ?>">
+                    Heures <input type="number" class="timer_input__white" name="h_4" value="<?php echo $h_4; ?>">
                     Minutes <input type="number" class="timer_input__white" name="m_4" value="<?php echo $m_4; ?>">
                     Secondes<input type="number" class="timer_input__white" name="s_4" value="<?php echo $s_4; ?>">
                     <button type="submit" class="poste_button__white" name="update_4">Update</button>
@@ -387,7 +392,7 @@
         </div>
         <div class="poste_5">
             <div class="poste_img__white">
-                <img src="images/poste_5_white.png" width="100%" height="100%">
+                <img id="poste-5_img" src="images/poste_5_white.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__white">
                 <ul class="poste_liste">
@@ -401,7 +406,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-5_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -422,6 +427,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_5">
                 </ul>
             </div>
@@ -437,7 +443,7 @@
         </div>
         <div class="poste_6">
             <div class="poste_img__blue">
-                <img src="images/poste_6.png" width="100%" height="100%">
+                <img id="poste-6_img" src="images/poste_6.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__blue">
                 <ul class="poste_liste">
@@ -451,7 +457,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-6_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -472,6 +478,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_6">
                 </ul>
             </div>
@@ -487,7 +494,7 @@
         </div>
         <div class="poste_7">
             <div class="poste_img__white">
-                <img src="images/poste_7_white.png" width="100%" height="100%">
+                <img id="poste-7_img" src="images/poste_7_white.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__white">
                 <ul class="poste_liste">
@@ -501,7 +508,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
-
+                    <li class="poste_etat" id="poste-7_etat">Etat : indisponible</li>
                     <li class="poste_utilisateur-nom">
                         <?php
                         $bdd = new PDO('mysql:host=127.0.0.1;dbname=cyber_room;charset=utf8', 'phpmyadmin', 'Workout974!', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -522,22 +529,23 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+
                     <li class="poste_infos__temps" id="demo_7">
                 </ul>
             </div>
             <div class="poste_timer">
                 <form method="POST" action="#">
-                     Date<input type="date" class="timer_input__white" name="date_7" value="<?php echo $date_7; ?>">
-                     Heures <input type="number" class="timer_input__white" name="h_7" value="<?php echo $h_7; ?>">
+                    Date<input type="date" class="timer_input__white" name="date_7" value="<?php echo $date_7; ?>">
+                    Heures <input type="number" class="timer_input__white" name="h_7" value="<?php echo $h_7; ?>">
                     Minutes <input type="number" class="timer_input__white" name="m_7" value="<?php echo $m_7; ?>">
-                     Secondes<input type="number" class="timer_input__white" name="s_7" value="<?php echo $s_7; ?>">
+                    Secondes<input type="number" class="timer_input__white" name="s_7" value="<?php echo $s_7; ?>">
                     <button type="submit" class="poste_button__white" name="update_7">Update</button>
                 </form>
             </div>
         </div>
         <div class="poste_8">
             <div class="poste_img__blue">
-                <img src="images/poste_8.png" width="100%" height="100%">
+                <img id="poste-8_img" src="images/poste_8.png" width="100%" height="100%">
             </div>
             <div class="poste_infos__blue">
                 <ul class="poste_liste">
@@ -551,6 +559,7 @@
                         $reponse->closeCursor();
                         ?>
                     </li>
+                    <li class="poste_etat" id="poste-8_etat">Etat : indisponible</li>
 
                     <li class="poste_utilisateur-nom">
                         <?php
@@ -579,8 +588,8 @@
                 <form method="POST" action="#">
                     Date<input type="date" class="timer_input__blue" name="date_8" value="<?php echo $date_8; ?>">
                     Heures <input type="number" class="timer_input__blue" name="h_8" value="<?php echo $h_8; ?>">
-                     Minutes <input type="number" class="timer_input__blue" name="m_8" value="<?php echo $m_8; ?>">
-                     Secondes<input type="number" class="timer_input__blue" name="s_8" value="<?php echo $s_8; ?>">
+                    Minutes <input type="number" class="timer_input__blue" name="m_8" value="<?php echo $m_8; ?>">
+                    Secondes<input type="number" class="timer_input__blue" name="s_8" value="<?php echo $s_8; ?>">
                     <button type="submit" class="poste_button__blue" name="update_8">Update</button>
                 </form>
             </div>
@@ -716,7 +725,11 @@
             // If the count down is over, write some text
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                document.getElementById("demo").innerHTML = "Temps écoulé";
+                document.getElementById("poste-1_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-1_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-1_img").src = 'images/used_poste1.png'
             }
         }, 1000);
 
@@ -740,11 +753,12 @@
             // If the count down is over, write some text
             if (distance_2 < 0) {
                 clearInterval(x_2);
-                document.getElementById("demo_2").innerHTML = "EXPIRED";
-                <?php
+                document.getElementById("demo_2").innerHTML = "Temps écoulé";
+                document.getElementById("poste-2_etat").innerHTML = "Etat : disponible";
 
-                ?>
-
+            } else {
+                document.getElementById("poste-2_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-2_img").src = 'images/used_poste2.png'
             }
         }, 1000);
 
@@ -768,11 +782,11 @@
             // If the count down is over, write some text
             if (distance_3 < 0) {
                 clearInterval(x_3);
-                document.getElementById("demo_3").innerHTML = "EXPIRED";
-                <?php
-
-                ?>
-
+                document.getElementById("demo_3").innerHTML = "Temps écoulé";
+                document.getElementById("poste-3_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-3_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-3_img").src = 'images/used_poste3.png'
             }
         }, 1000);
 
@@ -796,11 +810,11 @@
             // If the count down is over, write some text
             if (distance_4 < 0) {
                 clearInterval(x_4);
-                document.getElementById("demo_4").innerHTML = "EXPIRED";
-                <?php
-
-                ?>
-
+                document.getElementById("demo_4").innerHTML = "Temps écoulé";
+                document.getElementById("poste-4_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-4_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-4_img").src = 'images/used_poste4.png'
             }
         }, 1000);
         var countDownDate_5 = <?php
@@ -823,11 +837,11 @@
             // If the count down is over, write some text
             if (distance_5 < 0) {
                 clearInterval(x_5);
-                document.getElementById("demo_5").innerHTML = "EXPIRED";
-                <?php
-
-                ?>
-
+                document.getElementById("demo_5").innerHTML = "Temps écoulé";
+                document.getElementById("poste-5_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-5_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-5_img").src = 'images/used_poste5.png'
             }
         }, 1000);
 
@@ -851,11 +865,11 @@
             // If the count down is over, write some text
             if (distance_6 < 0) {
                 clearInterval(x_6);
-                document.getElementById("demo_6").innerHTML = "EXPIRED";
-                <?php
-
-                ?>
-
+                document.getElementById("demo_6").innerHTML = "Temps écoulé";
+                document.getElementById("poste-6_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-6_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-6_img").src = 'images/used_poste6.png'
             }
         }, 1000);
 
@@ -880,11 +894,11 @@
             // If the count down is over, write some text
             if (distance_7 < 0) {
                 clearInterval(x_7);
-                document.getElementById("demo_7").innerHTML = "EXPIRED";
-                <?php
-
-                ?>
-
+                document.getElementById("demo_7").innerHTML = "Temps écoulé";
+                document.getElementById("poste-7_etat").innerHTML = "Etat : disponible";
+            } else {
+                document.getElementById("poste-7_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-7_img").src = 'images/used_poste7.png'
             }
         }, 1000);
 
@@ -908,11 +922,14 @@
             // If the count down is over, write some text
             if (distance_8 < 0) {
                 clearInterval(x_8);
-                document.getElementById("demo_8").innerHTML = "EXPIRED";
+                document.getElementById("demo_8").innerHTML = "Temps écoulé";
+                document.getElementById("poste-8_etat").innerHTML = "Etat : disponible";
                 <?php
 
                 ?>
-
+            } else {
+                document.getElementById("poste-8_etat").innerHTML = "Etat : indisponible";
+                document.getElementById("poste-8_img").src = 'images/used_poste8.png'
             }
         }, 1000);
     </script>
